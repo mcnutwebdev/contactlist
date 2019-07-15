@@ -1,0 +1,18 @@
+<% include ./partials/header %>
+<div class="container">
+    <h3 class="myHeader">Contacts</h3>
+    <hr>
+    <% contacts.forEach(function(contact) { %>
+        <div class="mylistitem">
+            <div class="row">
+                <div class="col-md-1">
+                    <a class="ui big green basic button" href="/contacts/<%= contact._id %>">Details</a>
+                </div>
+                <div class="col-md-11">
+                    <h2><%= contact.firstname %> <%= contact.lastname %></h2>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+</div>
+<% include ./partials/footer %>

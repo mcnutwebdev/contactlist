@@ -1,0 +1,30 @@
+.myBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+}
+
+#deleteForm{
+    display: inline;
+}
+
+.contactCard {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.myHeader {
+    font-size: 300%;
+    color: #5cd65c;
+}
+
+.mylistitem {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

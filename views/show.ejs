@@ -1,0 +1,59 @@
+<% include ./partials/header.ejs %>
+<div class="container">
+    <h3 class="myHeader">Contact Details</h3>
+    <br>
+    <div>
+        <div class="contactCard">
+            <div>
+                <h1><%= contact.firstname %> <%= contact.lastname %></h1>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-2 myBox">
+                    <p>First Name:</p>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6 myBox">
+                    <%= contact.firstname %>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 myBox">
+                    <p>Last Name:</p>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6 myBox">
+                    <%= contact.lastname %>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 myBox">
+                    <p>Phone Number:</p>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6 myBox">
+                    <%= contact.phone %>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-1">
+                    <a class="ui big blue basic button" href="/contacts/<%= contact._id %>/edit">EDIT</a>
+                </div>
+                <div class="col-sm-1">
+                    <a class="ui big green basic button" href="/">HOME</a>
+                </div>
+                <div class="col-sm-1">
+                    <form id="deleteForm" action="/contacts/<%= contact._id %>?_method=DELETE"  method="POST">
+                        <button class="ui big red basic button">DELETE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>        
+    </div>    
+</div>
+<% include ./partials/footer.ejs %>
